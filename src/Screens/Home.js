@@ -17,7 +17,7 @@ class Home extends PureComponent {
   componentDidMount() {
     spotifyApi
         .getMySavedTracks({
-            limit: 20,
+            limit: 50,
             offset: 1,
         })
         .then(data => {
